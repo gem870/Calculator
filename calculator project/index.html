@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="main.css">
+
+  
+
+</head>
+<body>
+
+
+
+<div class="main"> 
+    <br>
+ <div class="body1">
+    <div class="subBody1">
+         <div class="solar">
+            <div class="solarline"></div>
+        </div>
+
+        <br><br><br><br>
+
+        <div class="time">
+          <p id="tim">02:00</p>
+        </div>
+
+        <br>
+
+        <div class="screen">
+        <input type="text" id="inputscreen" id="printN" style="font-size: 12px;" readonly placeholder="" />
+        <p id="screenResult">0.</p>
+        </div>
+
+    </div>
+
+
+ </div>
+
+
+
+ <div class="main2">
+
+    <div class="button1">
+            <div class="shift" style="margin-left: 4px;"><button>shift</button></div>
+            <div class="shift"><button>set</button></div>
+            <div class="shift"><button style="width: 35px; height: 25px; margin-left: 3px; border-radius: 20px;  border: 1px solid rgba(255, 255, 255, 0.306);"> <b class = "lo" > < </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b class = "lo" > > </b> </button></div>
+            <div class="shift"><button>mode</button></div>
+            <div class="shift"><button onclick="off()">off</button></div>
+    </div>
+
+    <div class="button2">
+
+                <button style="width: 17px; font-size: 7px; height: 13px;">tan</button>
+                <button style="width: 17px; font-size: 7px; height: 13px;">cos</button>
+                <button style="width: 17px; font-size: 7px; height: 13px;">(-)</button>
+                <button style="width: 17px; font-size: 7px; height: 13px;">sin</button>
+                <button style="width: 17px; font-size: 7px; height: 13px;">log</button>
+                <button style="width: 17px; font-size: 7px; height: 13px;">MA</button>
+                <button style="width: 17px; font-size: 7px; height: 13px;">drg</button>
+
+                <button style="width: 17px; font-size: 7px; height: 13px;">(</button>
+                <button style="width: 17px; font-size: 7px; height: 13px;">)</button>
+                <button style="width: 17px; font-size: 7px; height: 13px;">(+)</button>
+                <button style="width: 17px; font-size: 7px; height: 13px;">M+</button>
+                <button style="width: 17px; font-size: 7px; height: 13px;">M-</button>
+                <button style="width: 17px; font-size: 7px; height: 13px;">MC</button>
+                <button style="width: 17px; font-size: 7px; height: 13px;">MR</button>
+
+                <button style="width: 17px; font-size: 7px; height: 13px;">tan</button>
+                <button style="width: 17px; font-size: 7px; height: 13px;">cos</button>
+                <button style="width: 17px; font-size: 7px; height: 13px;">(-)</button>
+                <button style="width: 17px; font-size: 7px; height: 13px;">sin</button>
+                <button style="width: 17px; font-size: 7px; height: 13px;">log</button>
+                <button style="width: 17px; font-size: 7px; height: 13px;" onclick="clear()">Rcl</button>
+                <button style="width: 17px; font-size: 7px; height: 13px;">drg</button>
+            
+    </div>
+
+    <div class="numbers">
+        <button style="width: 27px;" onclick="printNumber(9)">9</button>
+        <button style="width: 27px;" onclick="printNumber(8)">8</button>
+        <button style="width: 27px;" onclick="printNumber(7)">7</button>
+        <button style="width: 27px;" onclick="printNumber(6)">6</button>
+        <button style="width: 27px;" onclick="printNumber(5)">5</button>
+        <button style="width: 27px;" onclick="printNumber(4)">4</button>
+        <button style="width: 27px;" onclick="printNumber(3)">3</button>
+        <button style="width: 27px;" onclick="printNumber(2)">2</button>
+        <button style="width: 27px;" onclick="printNumber(1)">1</button>
+        <button style="width: 27px;" onclick="printNumber(0)">0</button>
+        <button style="width: 27px;" onclick="printNumber('.')">.</button>
+        <button style="width: 27px; font-size: 7px;" onclick="printNumber()">EXP</button>
+    </div>
+<br>
+    <div class="operators">
+        <button class="redButton"onclick="del()">DEL</button>
+        <button class="redButton"onclick="on()">AC</button>
+        <button style="width: 20px;" onclick="printNumber('*')">*</button>
+        <button style="width: 20px;" onclick="printNumber('/')">/</button>
+        <button style="width: 20px;" onclick="printNumber('+')">+</button>
+        <button style="width: 20px;" onclick="printNumber('-')">-</button>
+        <button style="width: 20px; font-size: 7px;" onclick="ans()">Ans</button>
+        <button style="width: 20px;" onclick="printResult()">=</button>
+        
+    </div>
+
+    
+ </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="./cal.js">
+
+</script>
+</body>
+</html>
